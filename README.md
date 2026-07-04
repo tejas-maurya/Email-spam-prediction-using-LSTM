@@ -1,54 +1,128 @@
-# 🔮 Next Word Prediction Keyboard using LSTM
+# 📧 Email Spam Detection using Bidirectional LSTM
 
-A Deep Learning project that predicts the next word in a sentence, similar to the predictive text feature found in mobile keyboards such as Gboard and SwiftKey.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge\&logo=tensorflow)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge\&logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-The model is built using **TensorFlow/Keras**, trained on a large text corpus, and can predict the most probable next word based on the previously typed words.
-
----
-
-## 📌 Features
-
-- Next-word prediction using Deep Learning
-- LSTM-based Language Model
-- Text preprocessing and tokenization
-- Sequence generation for training
-- Embedding Layer for word representation
-- Interactive prediction interface
-- Save and load trained model
-- Easy to extend with larger datasets
+A modern **Deep Learning** web application that classifies emails as **Spam** or **Ham (Legitimate)** using a **Bidirectional LSTM Neural Network**. The application provides real-time predictions through an elegant Streamlit interface with confidence scores, spam keyword detection, prediction history, and downloadable reports.
 
 ---
 
-## 📂 Project Structure
+## 🚀 Live Demo
 
-```
-Next-Word-Prediction/
-│
-├── dataset/
-│   └── text_dataset.txt
-│
-├── notebooks/
-│   └── training.ipynb
-│
-├── models/
-│   ├── next_word_model.keras
-│   ├── tokenizer.pkl
-│   └── max_sequence_length.pkl
+🔗 **Streamlit:** *Add your deployment link*
+
+🔗 **Hugging Face:** *Add your deployment link*
+
+---
+
+## 📸 Preview
+
+> Add screenshots of your application here.
+
+### 🏠 Home Page
+
+<img src="screenshots/home.png" width="100%">
+
+### 🚨 Spam Prediction
+
+<img src="screenshots/spam.png" width="100%">
+
+### ✅ Ham Prediction
+
+<img src="screenshots/ham.png" width="100%">
+
+---
+
+# ✨ Features
+
+* 📧 Real-time Email Spam Detection
+* 🤖 Deep Learning using Bidirectional LSTM
+* ⚡ Instant Predictions
+* 📊 Confidence Score
+* 📈 Spam/Ham Probability Bars
+* 📋 Email Statistics
+* 🔍 Spam Keyword Detection
+* 🕘 Recent Prediction History
+* 📥 Download Prediction Report
+* 🎨 Modern Glassmorphism Interface
+* 🌈 Animated Gradient Background
+* 📱 Responsive Design
+* ⚡ Cached Model Loading
+* 🛡️ Error Handling
+* ☁️ Ready for Streamlit & Hugging Face Deployment
+
+---
+
+# 🛠 Tech Stack
+
+| Category         | Technologies       |
+| ---------------- | ------------------ |
+| Programming      | Python             |
+| Deep Learning    | TensorFlow, Keras  |
+| Neural Network   | Bidirectional LSTM |
+| Data Processing  | NumPy, Pandas      |
+| Machine Learning | Scikit-learn       |
+| Frontend         | Streamlit          |
+| Model Format     | `.keras`           |
+
+---
+
+# 📂 Project Structure
+
+```text
+Email-Spam-Detection/
 │
 ├── app.py
-├── train.py
-├── predict.py
+├── spam_lstm.keras
+├── tokenizer.pkl
+├── config.pkl
 ├── requirements.txt
 ├── README.md
-└── LICENSE
+├── screenshots/
+│   ├── home.png
+│   ├── spam.png
+│   └── ham.png
+└── .gitignore
 ```
 
 ---
 
-## 🧠 Model Architecture
+# ⚙️ Installation
 
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/Email-Spam-Detection.git
 ```
-Input Text
+
+```bash
+cd Email-Spam-Detection
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3️⃣ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 🧠 Model Workflow
+
+```text
+Input Email
       │
       ▼
 Text Cleaning
@@ -57,182 +131,146 @@ Text Cleaning
 Tokenizer
       │
       ▼
-Text Sequences
-      │
-      ▼
-Padding
+Sequence Padding
       │
       ▼
 Embedding Layer
       │
       ▼
-LSTM Layer
+Bidirectional LSTM
       │
       ▼
-Dropout
+Dense Layer
       │
       ▼
-Dense Layer (ReLU)
+Sigmoid Activation
       │
       ▼
-Output Layer (Softmax)
-      │
-      ▼
-Predicted Next Word
+Spam / Ham Prediction
 ```
 
 ---
 
-## 📊 Dataset
+# 📊 Application Workflow
 
-This project can be trained on various text datasets such as:
+1. User enters an email.
+2. The text is tokenized.
+3. Tokens are converted into sequences.
+4. Sequences are padded to a fixed length.
+5. The Bidirectional LSTM predicts the probability.
+6. The app displays:
 
-- WikiText-2
-- WikiText-103
-- Penn Treebank
-- OpenWebText
-- Reddit Comments
-- Custom text corpus
-
-> **Recommended:** WikiText-103 for better language modeling performance.
+   * Spam/Ham prediction
+   * Confidence score
+   * Spam/Ham probabilities
+   * Email statistics
+   * Spam keyword analysis
+   * Downloadable prediction report
 
 ---
 
-## ⚙️ Installation
+# 📷 Application Features
 
-Clone the repository:
+✅ Beautiful Glassmorphism UI
+
+✅ Animated Gradient Background
+
+✅ Large Email Input Box
+
+✅ Predict Button
+
+✅ Clear Button
+
+✅ Load Sample Email
+
+✅ Confidence Score
+
+✅ Probability Visualization
+
+✅ Spam Keyword Detection
+
+✅ Email Statistics
+
+✅ Recent Predictions
+
+✅ Download Prediction Report
+
+---
+
+# 📈 Future Improvements
+
+* 🔥 BERT-based Spam Detection
+* 🌍 Multi-language Support
+* 📧 Gmail API Integration
+* ☁️ Cloud Database
+* 📱 Mobile App
+* 🤖 Explainable AI (SHAP/LIME)
+* 🔗 Phishing URL Detection
+* 📎 Attachment Scanning
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch.
 
 ```bash
-git clone https://github.com/your-username/Next-Word-Prediction.git
+git checkout -b feature-name
 ```
 
-Move into the project directory:
+3. Commit your changes.
 
 ```bash
-cd Next-Word-Prediction
+git commit -m "Add new feature"
 ```
 
-Install dependencies:
+4. Push your branch.
 
 ```bash
-pip install -r requirements.txt
+git push origin feature-name
 ```
+
+5. Open a Pull Request.
 
 ---
 
-## 🚀 Training the Model
+# 📄 License
 
-Run:
-
-```bash
-python train.py
-```
-
-After training, the model and tokenizer will be saved inside the `models/` folder.
+This project is licensed under the **MIT License**.
 
 ---
 
-## ▶️ Running the Application
-
-Launch the prediction interface:
-
-```bash
-python app.py
-```
-
-or, if using Streamlit:
-
-```bash
-streamlit run app.py
-```
-
----
-
-## 💬 Example
-
-### Input
-
-```
-Machine learning is
-```
-
-### Output
-
-```
-transforming
-```
-
----
-
-### Input
-
-```
-Deep learning models
-```
-
-### Output
-
-```
-can
-```
-
----
-
-## 🧪 Technologies Used
-
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Pandas
-- Scikit-learn
-- Pickle
-- Streamlit (optional)
-
----
-
-## 📈 Future Improvements
-
-- Bidirectional LSTM
-- GRU implementation
-- Transformer-based language model
-- Beam Search decoding
-- Top-K and Top-P sampling
-- Attention mechanism
-- Mobile keyboard integration
-- Multilingual prediction
-- Personalized prediction
-- Real-time typing suggestions
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Home page
-- Prediction interface
-- Training accuracy and loss graphs
-- Sample predictions
-
----
-
-## 📊 Performance
-
-Evaluate the model using:
-
-- Training Accuracy
-- Validation Accuracy
-- Cross-Entropy Loss
-- Perplexity
-- Top-1 Accuracy
-- Top-5 Accuracy
-
----
-
-
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Tejansh Maurya**
 
-Feel free to connect and contribute to improve this project!
+🎓 B.Tech Student
+
+💻 Machine Learning & Deep Learning Enthusiast
+
+🤖 Passionate about AI, NLP, and Computer Vision
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ Star this repository
+
+🍴 Fork it
+
+📢 Share it with others
+
+---
+
+## 💙 Thank You
+
+Thank you for visiting this repository!
+
+If you have any suggestions or feedback, feel free to open an issue or connect with me.
+
+Happy Coding! 🚀
