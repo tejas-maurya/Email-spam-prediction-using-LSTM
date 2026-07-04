@@ -230,29 +230,6 @@ Evaluate the model using:
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new feature branch.
-3. Commit your changes.
-4. Push to your branch.
-5. Open a Pull Request.
-
----
-
-## ⭐ Support
-
-If you found this project helpful, please consider giving it a ⭐ on GitHub.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 👨‍💻 Author
 
