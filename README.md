@@ -11,29 +11,14 @@ A modern **Deep Learning** web application that classifies emails as **Spam** or
 
 ## 🚀 Live Demo
 
-🔗 **Streamlit:** *Add your deployment link*
-
-🔗 **Hugging Face:** *Add your deployment link*
+🔗 **Hugging Face:** https://huggingface.co/spaces/TEJASMAURYA/Spam-mail-prediction
 
 ---
-
-## 📸 Preview
-
-> Add screenshots of your application here.
 
 ### 🏠 Home Page
 
-<img src="screenshots/home.png" width="100%">
+<img width="422" height="792" alt="image" src="https://github.com/user-attachments/assets/8bcfce77-745a-4cd8-aea6-30a803738cc7" />
 
-### 🚨 Spam Prediction
-
-<img src="screenshots/spam.png" width="100%">
-
-### ✅ Ham Prediction
-
-<img src="screenshots/ham.png" width="100%">
-
----
 
 # ✨ Features
 
@@ -80,10 +65,6 @@ Email-Spam-Detection/
 ├── config.pkl
 ├── requirements.txt
 ├── README.md
-├── screenshots/
-│   ├── home.png
-│   ├── spam.png
-│   └── ham.png
 └── .gitignore
 ```
 
@@ -210,32 +191,6 @@ Spam / Ham Prediction
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository.
-2. Create a new branch.
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push your branch.
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request.
-
----
 
 # 📄 License
 
